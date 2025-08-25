@@ -2,7 +2,7 @@ import { Body, Controller, Get, Param, ParseIntPipe, Post } from '@nestjs/common
 import { DetailsDto } from './dtos/payment.dto';
 import { PaymentService } from './payment.service';
 
-@Controller('payments')
+@Controller('/api/v1/payments')
 export class PaymentController {
 
     constructor(private readonly paymentSevice: PaymentService){}
